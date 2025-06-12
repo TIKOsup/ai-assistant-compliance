@@ -1,16 +1,26 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import ModeToggle from "@/components/mode-toggle";
 import PdfUploader from "./components/PdfUploader";
+import { AppSidebar } from "./components/app-sidebar";
+import {
+  SidebarProvider,
+  SidebarInset,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 
 export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="container mx-auto px-4 mt-8">
-        <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-4">
-          <ModeToggle />
+      <SidebarProvider>
+        <AppSidebar />
+        <SidebarInset>
+          <header className="flex h-16 shrink-0 items-center gap-2">
+            <div className="flex items-center gap-2 px-4">
+              <SidebarTrigger className="-ml-1" />
+            </div>
+          </header>
           <PdfUploader />
-        </div>
-      </div>
+        </SidebarInset>
+      </SidebarProvider>
     </ThemeProvider>
   )
 }
