@@ -30,7 +30,7 @@ import {
 
 import { data } from "@/data";
 
-export function AppSidebar(props) {
+export function AppSidebar({ onNavigate, ...props }) {
   return (
     <Sidebar variant="inset" {...props}>
       <SidebarHeader>
@@ -52,7 +52,7 @@ export function AppSidebar(props) {
       </SidebarHeader>
 
       <SidebarContent>
-        <NavMain items={data.navMain} />
+        <NavMain items={data.navMain} onNavigate={onNavigate} />
         <NavSecondary className="mt-auto" />
       </SidebarContent>
 

@@ -19,7 +19,7 @@ import {
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
 
-export function NavMain({ items }) {
+export function NavMain({ items, onNavigate }) {
   return (
     <SidebarGroup>
       <SidebarGroupLabel>Основное</SidebarGroupLabel>
@@ -46,7 +46,9 @@ export function NavMain({ items }) {
                       {item.items?.map((subItem) => (
                         <SidebarMenuSubItem key={subItem.title}>
                           <SidebarMenuSubButton asChild>
-                            <a href={subItem.url}>
+                            <a href="#" onClick={() => {
+                              if (item.url && onNavigate) onNavigate(subItem.url);
+                            }}>
                               <span>{subItem.title}</span>
                             </a>
                           </SidebarMenuSubButton>

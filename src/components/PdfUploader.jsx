@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Loader2, ArrowUpToLine } from "lucide-react"
+import { TypographyH3 } from "./ui/typography"
 
 export default function PdfUploader() {
   const [pdfFile, setPdfFile] = useState(null)
@@ -60,61 +61,65 @@ export default function PdfUploader() {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto mt-8">
-      <CardHeader>
-        <CardTitle>Загрузка документов</CardTitle>
-      </CardHeader>
-      <CardContent className="p-4 space-y-4">
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="mb-8">
-            <Label htmlFor="file" className="mb-4">Выберите PDF файл:</Label>
-            <Input id="file" type="file" accept="application/pdf" onChange={handleFileChange} />
-          </div>
+    // <Card className="w-full max-w-md mx-auto mt-8">
+    // <CardHeader>
+    // <CardTitle>Загрузка документов</CardTitle>
+    // </CardHeader>
+    // <CardContent className="p-4 space-y-4">
+    <div className="w-full max-w-lg mx-auto">
+      <TypographyH3>Загрузка документов</TypographyH3>
 
-          <div className="space-y-2 mb-8">
-            <Label className="mb-4">Выберите проверки:</Label>
-            <div className="flex flex-col space-y-2 pl-2">
-              <div className="flex items-center justify-between">
-                <span>Compliance</span>
-                <Switch
-                  checked={checks.compliance}
-                  onCheckedChange={() => handleToggle("compliance")}
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Валютный контроль</span>
-                <Switch
-                  checked={checks.currControl}
-                  onCheckedChange={() => handleToggle("currControl")}
-                />
-              </div>
+      <form onSubmit={handleSubmit} className="space-y-4 mt-8">
+        <div className="mb-8">
+          <Label htmlFor="file" className="mb-4">Выберите PDF файл:</Label>
+          <Input id="file" type="file" accept="application/pdf" onChange={handleFileChange} />
+        </div>
+
+        <div className="space-y-2 mb-8">
+          <Label className="mb-4">Выберите проверки:</Label>
+          <div className="flex flex-col space-y-2 pl-2">
+            <div className="flex items-center justify-between">
+              <span>Compliance</span>
+              <Switch
+                checked={checks.compliance}
+                onCheckedChange={() => handleToggle("compliance")}
+              />
+            </div>
+            <div className="flex items-center justify-between">
+              <span>Валютный контроль</span>
+              <Switch
+                checked={checks.currControl}
+                onCheckedChange={() => handleToggle("currControl")}
+              />
             </div>
           </div>
+        </div>
 
+        <div className="flex justify-ceter items-center gap-4">
+          <Button type="submit" disabled={!pdfFile || uploading}>
+            {uploading ? (
+              <>
+                <Loader2 className="animate-spin w-4 h-4 mr-2" />
+                Загрузка...
+              </>
+            ) : (
+              <>
+                <ArrowUpToLine className="w-4 h-4 mr-2" />
+                Анализировать
+              </>
+            )}
+          </Button>
+        </div>
+
+        {pdfFile && (
           <div className="flex items-center gap-4">
-            <Button type="submit" disabled={!pdfFile || uploading}>
-              {uploading ? (
-                <>
-                  <Loader2 className="animate-spin w-4 h-4 mr-2" />
-                  Загрузка...
-                </>
-              ) : (
-                <>
-                  <ArrowUpToLine className="w-4 h-4 mr-2" />
-                  Анализировать
-                </>
-              )}
-            </Button>
+            {uploadSuccess === true && <p className="text-green-600">Успешно загружено</p>}
+            {uploadSuccess === false && <p className="text-red-600">Ошибка загрузки</p>}
           </div>
-
-          {pdfFile && (
-            <div className="flex items-center gap-4">
-              {uploadSuccess === true && <p className="text-green-600">Успешно загружено</p>}
-              {uploadSuccess === false && <p className="text-red-600">Ошибка загрузки</p>}
-            </div>
-          )}
-        </form>
-      </CardContent>
-    </Card>
+        )}
+      </form>
+    </div>
+    // </CardContent>
+    // </Card>
   )
 }

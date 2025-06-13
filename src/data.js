@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 
-export const data = {
+export let data = {
   user: {
     name: "№404",
     email: "n404team@berekebank.kz",
@@ -26,11 +26,11 @@ export const data = {
       items: [
         {
           title: "Загрузка PDF",
-          url: "#",
+          url: "upload",
         },
         {
           title: "Документы",
-          url: "#",
+          url: "documents",
         },
         {
           title: "История",
