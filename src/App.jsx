@@ -8,25 +8,30 @@ import {
   SidebarInset,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/sonner"
+import PdfDrawerPreview from "@/components/test"
 
 export default function App() {
   const [activeView, setActiveView] = useState("upload")
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <SidebarProvider>
-        <AppSidebar onNavigate={setActiveView} />
-        <SidebarInset>
-          <header className="flex h-16 shrink-0 items-center gap-2">
-            <div className="flex items-center gap-2 px-4">
-              <SidebarTrigger className="-ml-1" />
-            </div>
-          </header>
-          {/* Компонент загрузки документов */}
-          {activeView === "upload" && <PdfUploader />}
-          {activeView === "documents" && <Documents />}
-        </SidebarInset>
-      </SidebarProvider>
-    </ThemeProvider>
+    <>
+      <Toaster position="bottom-center" richColors />
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <SidebarProvider>
+          <AppSidebar onNavigate={setActiveView} />
+          <SidebarInset>
+            <header className="flex h-16 shrink-0 items-center gap-2">
+              <div className="flex items-center gap-2 px-4">
+                <SidebarTrigger className="-ml-1" />
+              </div>
+            </header>
+            {/* Компонент загрузки документов */}
+            {activeView === "upload" && <PdfUploader setActiveView={setActiveView} />}
+            {activeView === "documents" && <><Documents /> <PdfDrawerPreview /></>}
+          </SidebarInset>
+        </SidebarProvider>
+      </ThemeProvider>
+    </>
   )
 }

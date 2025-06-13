@@ -6,8 +6,10 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Loader2, ArrowUpToLine } from "lucide-react"
 import { TypographyH3 } from "./ui/typography"
+import { data } from "../table-data"
+import { toast } from "sonner"
 
-export default function PdfUploader() {
+export default function PdfUploader({ setActiveView }) {
   const [pdfFile, setPdfFile] = useState(null)
   const [uploading, setUploading] = useState(false)
   const [uploadSuccess, setUploadSuccess] = useState(null)
@@ -40,6 +42,22 @@ export default function PdfUploader() {
     formData.append("check_currControl", checks.currControl)
 
     console.log(formData)
+
+    // Сохранение файла, ПРИ ПОЛУЧЕНИИ ОТВЕТА
+    const fileDetails = {
+      id: "395063",
+      name: pdfFile.name,
+      date: new Date().toLocaleString("ru-RU"),
+      status: null,
+    }
+    data.push(fileDetails);
+    toast.success("Документ обработан", {
+      description: new Date().toLocaleString("ru-RU"),
+      action: {
+        label: "Перейти",
+        onClick: () => setActiveView("documents") ,
+      },
+    });
 
     setUploading(true)
     setUploadSuccess(null)
@@ -112,13 +130,6 @@ export default function PdfUploader() {
             )}
           </Button>
         </div>
-
-        {pdfFile && (
-          <div className="flex items-center gap-4">
-            {uploadSuccess === true && <p className="text-green-600">Успешно загружено</p>}
-            {uploadSuccess === false && <p className="text-red-600">Ошибка загрузки</p>}
-          </div>
-        )}
       </form>
     </div>
     // </CardContent>
