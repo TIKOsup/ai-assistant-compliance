@@ -72,7 +72,7 @@ export default function PdfUploader() {
       <form onSubmit={handleSubmit} className="space-y-4 mt-8">
         <div className="mb-8">
           <Label htmlFor="file" className="mb-4">Выберите PDF файл:</Label>
-          <Input id="file" type="file" accept="application/pdf" onChange={handleFileChange} />
+          <Input id="file" type="file" accept="application/pdf" onChange={handleFileChange} className="cursor-pointer" />
         </div>
 
         <div className="space-y-2 mb-8">
@@ -83,6 +83,7 @@ export default function PdfUploader() {
               <Switch
                 checked={checks.compliance}
                 onCheckedChange={() => handleToggle("compliance")}
+                className="cursor-pointer"
               />
             </div>
             <div className="flex items-center justify-between">
@@ -90,13 +91,14 @@ export default function PdfUploader() {
               <Switch
                 checked={checks.currControl}
                 onCheckedChange={() => handleToggle("currControl")}
+                className="cursor-pointer"
               />
             </div>
           </div>
         </div>
 
         <div className="flex justify-ceter items-center gap-4">
-          <Button type="submit" disabled={!pdfFile || uploading}>
+          <Button type="submit" disabled={!pdfFile || uploading} className="cursor-pointer">
             {uploading ? (
               <>
                 <Loader2 className="animate-spin w-4 h-4 mr-2" />
