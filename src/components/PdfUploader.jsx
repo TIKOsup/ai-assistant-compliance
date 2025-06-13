@@ -8,6 +8,15 @@ import { Loader2, ArrowUpToLine } from "lucide-react"
 import { TypographyH3 } from "./ui/typography"
 import { data } from "../table-data"
 import { toast } from "sonner"
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerClose,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 
 export default function PdfUploader({ setActiveView }) {
   const [pdfFile, setPdfFile] = useState(null)
@@ -17,12 +26,17 @@ export default function PdfUploader({ setActiveView }) {
     compliance: true,
     currControl: true,
   })
+  const [file, setFile] = useState(null)
+  const [fileUrl, setFileUrl] = useState("")
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0]
     if (file && file.type === "application/pdf") {
       setPdfFile(file)
       setUploadSuccess(null)
+      setFile(file)
+      const url = URL.createObjectURL(file)
+      setFileUrl(url)
     } else {
       alert("Пожалуйста, выберите PDF-файл.")
     }
@@ -55,7 +69,7 @@ export default function PdfUploader({ setActiveView }) {
       description: new Date().toLocaleString("ru-RU"),
       action: {
         label: "Перейти",
-        onClick: () => setActiveView("documents") ,
+        onClick: () => setActiveView("documents"),
       },
     });
 
@@ -129,6 +143,41 @@ export default function PdfUploader({ setActiveView }) {
               </>
             )}
           </Button>
+
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button type="button" disabled={!pdfFile || uploading} className="cursor-pointer">
+                Предпросмотр PDF
+              </Button>
+            </DrawerTrigger>
+
+            <DrawerContent className="h-[90%]">
+              <DrawerHeader>
+                <DrawerTitle>Предпросмотр PDF</DrawerTitle>
+                <DrawerDescription>
+                  Загрузите PDF-файл и просмотрите его содержимое ниже
+                </DrawerDescription>
+              </DrawerHeader>
+
+              <div className="p-4 space-y-4">
+                {fileUrl && (
+                  <div className="border rounded w-full h-[70vh] overflow-hidden">
+                    <iframe
+                      src={fileUrl}
+                      title="PDF Preview"
+                      width="100%"
+                      height="100%"
+                      className="rounded"
+                    />
+                  </div>
+                )}
+
+                <DrawerClose asChild>
+                  <Button variant="outline" className="mt-4">Закрыть</Button>
+                </DrawerClose>
+              </div>
+            </DrawerContent>
+          </Drawer>
         </div>
       </form>
     </div>

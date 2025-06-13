@@ -9,7 +9,6 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/sonner"
-import PdfDrawerPreview from "@/components/test"
 
 export default function App() {
   const [activeView, setActiveView] = useState("upload")
@@ -28,7 +27,7 @@ export default function App() {
             </header>
             {/* Компонент загрузки документов */}
             {activeView === "upload" && <PdfUploader setActiveView={setActiveView} />}
-            {activeView === "documents" && <><Documents /> <PdfDrawerPreview /></>}
+            {activeView === "documents" && <Documents />}
           </SidebarInset>
         </SidebarProvider>
       </ThemeProvider>
