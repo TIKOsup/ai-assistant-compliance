@@ -18,6 +18,7 @@ export default function App() {
               <SidebarTrigger className="-ml-1" />
             </div>
           </header>
+          {/* Компонент загрузки документов */}
           <PdfUploader />
         </SidebarInset>
       </SidebarProvider>
