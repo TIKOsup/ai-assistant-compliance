@@ -176,6 +176,7 @@ export function DataTable() {
                 }
               </div>
               <div><strong>Дата:</strong> {selectedRow.date}</div>
+              <div><p> {selectedRow.refultInfo} </p></div>
               <DrawerClose asChild>
                 <Button className="mt-4">Закрыть</Button>
               </DrawerClose>

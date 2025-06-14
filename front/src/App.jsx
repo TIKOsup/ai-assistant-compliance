@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { ThemeProvider } from "@/components/theme-provider";
 import PdfUploader from "@/components/PdfUploader";
-import Documents from "@/components/Documents";
+import Documents from "@/components/documents";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   SidebarProvider,

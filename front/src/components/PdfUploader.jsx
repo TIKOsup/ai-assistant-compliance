@@ -61,19 +61,23 @@ export default function PdfUploader({ setActiveView }) {
     setUploadSuccess(null)
 
     try {
-      const res = await fetch("46.19.40.83:8080/file/", {
+      const res = await fetch("http://localhost:8081/upload", {
         method: "POST",
         body: formData,
       })
 
+
       if (!res.ok) throw new Error("Ошибка при загрузке файла");
+
+      const result = await res.json();
 
       // Сохранение файла
       const fileDetails = {
-        id: "395063",
+        id: crypto.randomUUID(),
         name: pdfFile.name,
         date: new Date().toLocaleString("ru-RU"),
-        status: null,
+        status: result?.status ?? null,
+        resultInfo: result?.resultInfo ?? null,
       }
       data.push(fileDetails);
       toast.success("Документ обработан", {
