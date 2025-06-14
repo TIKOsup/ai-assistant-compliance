@@ -86,10 +86,10 @@ export const columns = [
 
       if (row.getValue("status")) {
         status = "Одобрено";
-        classes = "bg-green-600";
+        classes = "bg-green-600 text-neutral-50";
       } else {
         status = "Отказано";
-        classes = "bg-red-600";
+        classes = "bg-red-600 text-neutral-50";
       }
 
       return (

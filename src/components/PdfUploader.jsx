@@ -57,35 +57,38 @@ export default function PdfUploader({ setActiveView }) {
 
     console.log(formData)
 
-    // Сохранение файла, ПРИ ПОЛУЧЕНИИ ОТВЕТА
-    const fileDetails = {
-      id: "395063",
-      name: pdfFile.name,
-      date: new Date().toLocaleString("ru-RU"),
-      status: null,
-    }
-    data.push(fileDetails);
-    toast.success("Документ обработан", {
-      description: new Date().toLocaleString("ru-RU"),
-      action: {
-        label: "Перейти",
-        onClick: () => setActiveView("documents"),
-      },
-    });
-
     setUploading(true)
     setUploadSuccess(null)
 
     try {
-      const res = await fetch("/api/upload-pdf", {
+      const res = await fetch("46.19.40.83:8080/file/", {
         method: "POST",
         body: formData,
       })
 
-      if (!res.ok) throw new Error("Ошибка при загрузке файла")
+      if (!res.ok) throw new Error("Ошибка при загрузке файла");
+
+      // Сохранение файла
+      const fileDetails = {
+        id: "395063",
+        name: pdfFile.name,
+        date: new Date().toLocaleString("ru-RU"),
+        status: null,
+      }
+      data.push(fileDetails);
+      toast.success("Документ обработан", {
+        description: new Date().toLocaleString("ru-RU"),
+        action: {
+          label: "Перейти",
+          onClick: () => setActiveView("documents"),
+        },
+      });
       setUploadSuccess(true)
     } catch (error) {
       console.error("Ошибка загрузки:", error)
+      toast.error("Ошибка при отправке", {
+        description: new Date().toLocaleString("ru-RU"),
+      });
       setUploadSuccess(false)
     } finally {
       setUploading(false)
