@@ -73,7 +73,7 @@ export default function PdfUploader({ setActiveView }) {
 
       // Сохранение файла
       const fileDetails = {
-        id: crypto.randomUUID(),
+        id: `doc-${Date.now()}`,
         name: pdfFile.name,
         date: new Date().toLocaleString("ru-RU"),
         status: result?.status ?? null,
