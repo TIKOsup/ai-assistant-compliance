@@ -1,0 +1,116 @@
+ИЗВЛЕЧЕННЫЙ ТЕКСТ ДОГОВОРА
+============================================================
+Исходный файл: 13-1.pdf
+Дата извлечения: 2025-06-14T08:54:20.073781
+Размер текста: 6339 символов
+Анализатор: LangChain + Ollama (qwen2.5:3b-instruct)
+============================================================
+
+=== Страница 1 ===
+Contract Ne 02S
+«16» Июля 2024 года Казахстан, г. Алматы «16» July 2024 Almaty, Kazakhstan
+GREED 3:2 er. ctpvposannoe должным образом GD company properly registered in the
+в Республике Казахстан, имеющее офис по адресу:
+в дальнейшем именуемое | КагаКА${ап, ПегетаКег ге{егге {0 аз “Сизфотег” апд $МА
+«Покупатель», и компания $МА Емесгопюс ОоситепЕ GmbH, | Electronic Document GmbH, company properly registered in
+зарегистрированная должным образом в LepmaHun no | Germany in accordance with current German legislation, having
+существующим законам Германии и имеющая офис no | its office at: Sodeler Weg 2, 61200 Wolfersheim, Germany,
+адресу: Sodeler Weg 2, 61200 Wolfersheim, Germany, s | hereinafter referred to as “Supplier”, have concluded this
+DanbHevwem umeHyemaa «MoctaBuynk», 3aknouNnNM HacTroawMn | Contract concerning mentioned below:
+контракт о нижеследующем:
+1. ПРЕДМЕТ КОНТРАКТА 1. SUBJECT OF THE CONTRACT
+1.1. Поставщик обязуется поставить, а Покупатель | 1.1. Supplier is obliged to supply and Customer is obliged to
+принять и оплатить следующий товар: pay for and accept the goods:
+Unit
+Ne Наименование Кол- oo Ст-ть, ; price, om
+n/n товара мн р Espo Name of goods Q-ty EUR price,
+EUR
+1 C10PICO0D00 1 %
+C10PICOODOO0
+Расходные
+материалы ane saa Chemical
+; et ets
+dot ca ры шт. | 2 |5425 | 108,50 chemicals (1 Set р | = | 9959 | 20050
+из 1л. проявителя, chemicals = 11 dev.,
+1л. фиксажа, 1л. 1 | rixer, 11 1.rinse, 1
+npompiBbKal, 1л. | 2. rinse)
+промывка2) 2 | 95-10001
+2 95-10001
+1 580,00 | 580,00
+Доставка, Almaty
+СЕ г.Алматы Total amount of the contract:
+Сумма настоящего Контракта составляет 688,50 EUR
+688,50 EUR (six hundred and eighty-eight euros, fifty cents).
+(шестьсот восемьдесят восемь евро, пятьдесят центов). 2 TERMS OF DELIVERY
+2. УСЛОВИЯ ПОСТАВКИ 22a; Delivery has to be done by Supplier from its warehouse:
+Sik Поставка осуществляется силами Поставщика с его | соцеег Weg 2, 61200 Wolfersheim, Germany, up to Almaty
+ckKNafa no agpecy: Sodeler Weg 2, 61200 Wolfersheim, Germany airport, Kazakhstan.
+до аэропорта г. Алматы, Казахстан. 2.2: Supplier makes a delivery after accept of advance
+2.2. Поставщик осуществляет поставку после получения payment from Customer side in 100%, in amount of 688,50 EUR
+предоплаты от Покупателя в размере 100%, что составляет
+688,50 EUR 2.3. Period of delivery in accordance with the Contract is 20
+2D Срок поставки по контракту составляет не более 20 | calendar days from the moment of advance payment (2.2.).
+календарных дней с момента предоплаты по п. 2.2. 3. УСЛОВИЯ ОПЛАТЫ
+3. УСЛОВИЯ ОПЛАТЫ 334, Advance payment (2.2.) has to be done by Customer by
+3.1, Предоплата по п. 2.2. осуществляется Покупателем | теап$ о! БапКтв {гап${ег in Euro to the Supplier’s account in
+путем банковского перевода в Евро на расчетный счет | ассогдапсе ми туогсе.
+Продавца на основании выставленного инвойса. 3.2. Supplier pays a commission of its Bank.
+ia: Комиссионные в банке Поставщика оплачивает
+Поставщик. co Customer pays a commission of its Bank.
+3.3. Комиссионные в банке Покупателя оплачивает
+Покупатель.
+4. ПРОЧИЕ УСЛОВИЯ 4. OTHER TERMS AND CONDITIONS
+4.1. В случае нарушения срока поставки товара по п. 2.3., | 4.1. In case of violation of the period of delivery (2.3.)
+
+
+=== Страница 2 ===
+Поставщик обязан вернуть Покупателю полученные деньги B | Supplier has to pay back accepted money to Customer in a
+срок не более 30 дней со дня получения этой оплаты, а также | репод по тоге {вап 30 дауз $тсе а дау of those money accept
+уплатить штраф в размере 0,1% в день от CymMbI, NONyYYeHHON | and to pay a penalty in 0,1% of total amount per every day of a
+oT [loxynatena, 3a Kak AbIM MeHb Nepvoga, B TeYeHUe KOTOPOrO | period while Supplier kept the money in its disposition.
+данная сумма находилась в его (Продавца) распоряжении. 4.2. This Contract is written in both Russian and English
+4.2. Данный Контракт составлен на двух языках - русском | |апвиаве$. In case of different understanding English version
+и английском. В случае разночтений английский вариант | На$ а рпог югсе.
+имеет преимущественную силу. 4.3. This contract is the sole expression of agreement by the
+4.3. Данный Контракт выражает обоюдную | РагШез сопсегпшр {Не воо4$ and may only be amended by
+договоренность сторон в отношении поставки товара и может | мигИтв Бу {Пе Бо{й Раг@е$.
+быть изменен только по обоюдному письменному согласию. 4.4. The Parties will attempt to resolve amicably any
+4.4. Любые разногласия стороны будут nobitateca | dispute, which may arise under this Contract. In the event of
+разрешить путем переговоров. В случае невозможности | failure to resolve the dispute amicably within a reasonable
+такого решения, любая сторона может направить спорный | ретод о time, either Party refers the dispute for final
+вопрос для решения в арбитраж в соответствии с правилами | settlement by one or more arbitrators appointed in accordance
+международной торговой палаты. with the Rules of Conciliation and Arbitration of the
+4.5. Договор действует с момента его подписания до | {егпаНопа! СпатЪег о! Соттегсе.
+полного исполнения обязательств обеими Сторонами 4.5. The Contract is valid since its signing until complete
+executing of their obligations by both Parties.
+5. — ЮРИДИЧЕСКИЕ АДРЕСА И БАНКОВСКИЕ РЕКВИЗИТЫ
+СТОРОН 5. LEGAL ADDRESSES AND BANK ACCOUNTS OF THE PARTIES
+ПОКУПАТЕЛЬ: CUSTOMER:
+БИН: БИН:
+ИИК: ИИК:
+БАНК: БАНК:
+БИК cK
+ПОСТАВЩИК
+SMA Electronic Document GmbH SUPPLIER
+Sodeler Weg 2, 61200 Wolfersheim, Germany SMA Electronic Document GmbH
+Телефон: +49-6036-989-3010 Sodeler Weg 2, 61200 Wolfersheim, Germany
+Телефакс: +49-6036-989-3020 Phone: +49-6036-989-3010
+Commercial Register: Frankfurt HRB72595 Fax: +49-6036-989-3020
+VAT Number: DE214981429 Commercial Register: Frankfurt HRB72595
+Bank Details: VAT Number: DE214981429
+COMMERZBANK FRANKFURT AM MAIN Bank Details:
+Bank Code: 500 400 00 COMMERZBANK FRANKFURT AM MAIN
+Account Number: 351 205 000 Bank Code: 500 400 00
+IBAN: DE67500400000351205000 Account Number: 351 205 000
+SWIFT Code: COBADEFFXXX IBAN: DE67500400000351205000
+SWIFT Code: COBADEFFXXX
+Подписи сторон os
+NOKYNAFEb/ CUSTOMER , Signatures of the Pali
+у oO a :
+Маме: a By: te S28 Gdeay | |
+Si — : - Name: Ka.\olh EMA SCA! ERS.COM
+= 10 @\ 7еёарищество 6 ограниченной $ | мены Е
+Ее 0 зетственностью = у O120S Wererthoin ¢ Gennany
+Sa irgaAv BSN \ р
+АН
+

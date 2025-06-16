@@ -1,0 +1,32 @@
+{
+  "contract_file": "ВД 2-1.pdf",
+  "analysis_date": "20250614_013400",
+  "text_length": 6064,
+  "extraction_method": "OCR",
+  "keyword_analysis": {
+    "is_contract": true,
+    "has_sanctions_mentions": false,
+    "has_currency_operations": true,
+    "has_risk_items": false,
+    "found_keywords": {
+      "sanctions": [],
+      "currency": [
+        "доллар"
+      ],
+      "contract": [
+        "договор",
+        "контракт",
+        "соглашен",
+        "сторон",
+        "покупател",
+        "продавец"
+      ],
+      "risks": []
+    }
+  },
+  "llm_analysis": null,
+  "recommendation": "ОШИБКА_АНАЛИЗА",
+  "reason": "Не удалось создать отчет",
+  "contract_text_file": "contract_text_ВД 2-1_20250614_013400.txt",
+  "contract_preview": "=== Страница 1 ===\nСОГЛАШЕНИЕ О ПРОДАЖЕ р\nСОМТКАСТ |\n;\nHOMe KOHTpakTa |\nDATA DATE: 2025-05-23 р Ракта | С СВС2505/01 '\nContract NO:\nпродавец Seller:\n| Nokynatenb Buyer:\nShenZhen XINXIANGYUAN International Trade a\nie\nco.,Ltd\nАдрес Адагез$ : адрес : |\n10.5, Third Lane, Tunwei New village, KUIFENG, Dapeng Ne |\ndistrict, Shenzhen, China. т\nThe undersigned Sellers and Buyers have confirmed this contract in accordance with the terms\nand conditions stipulated below Недопустимые продавцы и покупатели подтвердили этот\nконтракт в соответствии с условиями, предусмотренными ниже::\n1. Название оборудования и количество, цена Product Name and Price\nНомер\nTelescopic boom rough terrain forklift (STon) 1 комплект |\n1 USD107,500 а\nТелескопический вилочный погрузчик повышенной проходимости (5 тонн) Е |\n| © А < В\n2.Оплата Payment Term: Kier _ ыы = |\n50% Т/Т в качестве первоначального взноса. 50% Т/Т после завершения рабо иЯеред упрацкой. > a\n50% by T/T as downpayment. 50% by T/T after finish ready and bef"
+}

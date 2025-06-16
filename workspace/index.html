@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файла и ответ функции</title>
+</head>
+<body>
+    <h2>Загрузите файл</h2>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit">Загрузить</button>
+    </form>
+    <div id="response" style="margin-top:20px;"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('fileInput');
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            // Отправка файла на сервер (замените URL на свой)
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.text(); // или .json(), если сервер возвращает JSON
+            document.getElementById('response').innerText = result;
+        });
+    </script>
+</body>
+</html>
